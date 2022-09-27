@@ -46,7 +46,7 @@ public class UseRepresentation {
 		Tensor<TString> t = TString.tensorOfBytes(NdArrays.vectorOfObjects(input));
 		
 		// conversion with Use
-		Tensor<TFloat32> result = this.savedModelBundle.session().runner().feed("input", t).fetch("output").run().get(0).expect(TFloat32.DTYPE);
+		Tensor<TFloat32> result = this.savedModelBundle.session().runner().feed("serving_default_inputs:0", t).fetch("StatefulPartitionedCall_1:0").run().get(0).expect(TFloat32.DTYPE);
 		
 		float[][] output = new float[values.length][512];
 		// conversion to regular float array
