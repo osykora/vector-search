@@ -4,8 +4,8 @@
 
 How to run
 1. Download https://tfhub.dev/google/universal-sentence-encoder/4
-   a. unpack it
-   b. move it to /src/main/resources/universal-model directory
+<br>a. unpack it
+<br>b. move it to /src/main/resources/universal-model directory
 2. Run ElasticSearch 7.xx locally - https://www.elastic.co/downloads/past-releases#elasticsearch
 3. Create index and load data - run /src/main/resources/elastic/LoadData.http
 4. Search - run /src/main/resources/elastic/search.http
