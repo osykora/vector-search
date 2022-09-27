@@ -1,4 +1,6 @@
 Vector encoder - https://tfhub.dev/google/universal-sentence-encoder/4
+https://www.elastic.co/guide/en/elasticsearch/reference/7.17/dense-vector.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.17/query-dsl-script-score-query.html#vector-functions
 
 How to run
 1. Run ElasticSearch 7.xx locally - https://www.elastic.co/downloads/past-releases#elasticsearch
